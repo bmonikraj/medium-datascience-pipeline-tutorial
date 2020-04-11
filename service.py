@@ -15,7 +15,7 @@ import asyncio
 import websockets
 import json
 
-RABBITMQ_CONN = 'amqp://qgiopyqq:7oJ-H0oogyJglZ3bP92sdRtIWiu-J6pX@vulture.rmq.cloudamqp.com/qgiopyqq'
+RABBITMQ_CONN = '<URL Connection string for RabbitMQ>'
 params = pika.URLParameters(RABBITMQ_CONN)
 
 response_queue = {}

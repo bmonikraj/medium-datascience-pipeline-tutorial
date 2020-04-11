@@ -13,7 +13,7 @@ import sys
 import signal
 import numpy as np
 
-RABBITMQ_CONN = 'amqp://qgiopyqq:7oJ-H0oogyJglZ3bP92sdRtIWiu-J6pX@vulture.rmq.cloudamqp.com/qgiopyqq'
+RABBITMQ_CONN = '<URL connection string for RabbitMQ>'
 params = pika.URLParameters(RABBITMQ_CONN)
 connectionReq = pika.BlockingConnection(params)
 channelReq = connectionReq.channel()
