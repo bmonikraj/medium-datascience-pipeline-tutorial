@@ -21,7 +21,7 @@ at http://archive.ics.uci.edu/ml/datasets/connectionist+bench+(sonar,+mines+vs.+
 - The testing script of the project is => { client.py }
 - Install all the dependencies of the project before running any script, **on individual target system** => Quick Note : If you have latest Anaconda version of python installed (3.6+ Py), then you only need to install *pika*
 - Make sure to have data file in the same directory as of trainer.py => Also available in the repository
-- You will need RabbitMQ to use this tutorial. You can install locally or use CloudAMQ free service for the purpose => Once you have the *Connection URL String* of rabbitMq, put (at RABBITMQ_URL) them in files { predictor.py, service.py } 
+- You will need RabbitMQ to use this tutorial. You can install locally or use CloudAMQ free service for the purpose => Once you have the *Connection URL String* of rabbitMq, put (at RABBITMQ_CONN) them in files { predictor.py, service.py } 
 - Once the training is complete by running command mentioned below in **#1** and clf_model.sav is generated, { clf_model.sav, predictor.py } should be residing in same directory and can be treated as one **logical deployment unit (LDU 1)**, with their required dependencies, as mentioned in trainer.py and predictor.py installed
 - After installing dependencies of service.py, this can be treated as another **logical deployment unit (LDU 2)**.
 - We can run **(LDU 1)** by taking care of above mentioned pre-requisite and running command mentioned below in **#2**
